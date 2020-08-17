@@ -60,7 +60,7 @@ module.exports = {
             if (!response) {
                 return res.status(500).json({ message: errorMessage() });
             }
-            return res.status(200).json(response);
+            return res.status(200).send(response);
         } catch (error) {
             console.log(error);
         }
